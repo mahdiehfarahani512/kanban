@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kanban</title>
+  </head>
+  <body class="h-screen">
+    <div class="grid grid-cols-[3fr_9fr] grid-rows-[2fr_10fr] h-full" id="app">
+      <header class="bg-amber-400 col-start-2 col-end-3 row-start-1 row-end-2">
+        header
+      </header>
+      <aside
+        class="bg-amber-800 col-start-1 col-end-2 row-start-1 row-end-3 p-8 border-b-1 border-b-"
+      >
+        <img src="logo.svg" />
+      </aside>
+      <main class="bg-amber-600 col-start-2 col-end-3 row-start-2 row-end-3">
+        main
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
