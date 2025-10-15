@@ -8,16 +8,50 @@
   </head>
   <body class="h-screen">
     <div class="grid grid-cols-[3fr_9fr] grid-rows-[2fr_10fr] h-full" id="app">
-      <header class="bg-amber-400 col-start-2 col-end-3 row-start-1 row-end-2">
-        header
+
+      <header class="bg-white col-start-2 col-end-3 row-start-1 row-end-2 flex items-center  p-8 justify-between border-l-[1px] border-l-gray-200 border-b-[1px] border-b-gray-200 ">
+
+        <span class="font-bold text-black text-[25px]">Platform Launch</span>
+        <div class="flex justify-between gap-4">
+        <button class="text-white font-bold bg-[#635fc7] text-[14px] py-3 px-5 rounded-[20px]">+ Add New Task</button>
+        <?xml version="1.0" encoding="utf-8"?>
+<!-- License: CC Attribution. Made by salesforce: https://lightningdesignsystem.com/ -->
+<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" 
+	 width="20px" height="20px" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve">
+<path d="M20,44c0-3.3,2.7-6,6-6s6,2.7,6,6s-2.7,6-6,6S20,47.3,20,44z M20,26c0-3.3,2.7-6,6-6s6,2.7,6,6s-2.7,6-6,6
+	S20,29.3,20,26z M20,8c0-3.3,2.7-6,6-6s6,2.7,6,6s-2.7,6-6,6S20,11.3,20,8z"/>
+</svg>
+
+</div>
       </header>
+
       <aside
-        class="bg-amber-800 col-start-1 col-end-2 row-start-1 row-end-3 p-8 border-b-1 border-b-"
+        class="bg-white col-start-1 col-end-2 row-start-1 row-end-3   flex flex-col gap-[10px]"
       >
-        <img src="logo.svg" />
+        <img class="w-[180px] h-[35px] m-9 " src="logo.svg" />
+
+      <div class="flex flex-col gap-[10px]">
+        <span class="text-[14px] text-[#9ca3af] font-medium p-4">ALL BOARDS (3)</span>
+        <div class="flex items-center justify-between rounded-r-full bg-[#635fc7] w-[270px] h-[50px] p-[20px] text-white font-medium">
+          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z" fill="currentcolor"></path></svg>
+          <span>Platform Launch</span>
+        </div>
+          <div class="flex items-center justify-between rounded-r-full bg-white w-[270px] h-[50px] p-[20px] text-[#6b7280] font-medium">
+          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z" fill="currentcolor"></path></svg>
+          <span>Marketing Plan</span>
+     </div>
+      <div class="flex items-center justify-between rounded-r-full bg-white w-[270px] h-[50px] p-[20px] text-[#6b7280] font-medium">
+          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z" fill="currentcolor"></path></svg>
+          <span>Roadmap</span>
+     </div>
+     <div class="flex items-center justify-between rounded-r-full bg-white w-[270px] h-[50px] p-[20px] text-[#635fc7] font-bold">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M0 2.889A2.889 2.889 0 0 1 2.889 0H13.11A2.889 2.889 0 0 1 16 2.889V13.11A2.888 2.888 0 0 1 13.111 16H2.89A2.889 2.889 0 0 1 0 13.111V2.89Zm1.333 5.555v4.667c0 .859.697 1.556 1.556 1.556h6.889V8.444H1.333Zm8.445-1.333V1.333h-6.89A1.556 1.556 0 0 0 1.334 2.89V7.11h8.445Zm4.889-1.333H11.11v4.444h3.556V5.778Zm0 5.778H11.11v3.11h2a1.556 1.556 0 0 0 1.556-1.555v-1.555Zm0-7.112V2.89a1.555 1.555 0 0 0-1.556-1.556h-2v3.111h3.556Z" fill="currentcolor"></path></svg>
+      <span>+ Creat New Board</span>
+     </div>
+     
       </aside>
-      <main class="bg-amber-600 col-start-2 col-end-3 row-start-2 row-end-3">
-        main
+      <main class="bg-blue-50 col-start-2 col-end-3 row-start-2 row-end-3 border-l-[1px] border-l-gray-200">
+        
       </main>
     </div>
     <script type="module" src="/src/main.ts"></script>
