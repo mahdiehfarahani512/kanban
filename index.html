@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kanban</title>
   </head>
-  <body class="h-screen">
+  <body class="h-screen ">
+    <section>
     <div class="grid grid-cols-[3fr_9fr] grid-rows-[2fr_10fr] h-full" id="app">
       <header
-        class="bg-white col-start-2 col-end-3 row-start-1 row-end-2 flex items-center p-8 justify-between border-l-[1px] border-l-gray-200 border-b-[1px] border-b-gray-200"
+        class="bg-white col-start-2 col-end-3 row-start-1 row-end-2 flex items-center h-[98px] px-8 justify-between border-l-[1px] border-l-gray-200 border-b-[1px] border-b-gray-200"
       >
         <span class="font-bold text-black text-[25px]">Platform Launch</span>
         <div class="flex justify-between gap-4">
@@ -41,7 +42,7 @@
         class="bg-white col-start-1 col-end-2 row-start-1 row-end-3 flex flex-col gap-[10px]"
       >
         <div
-          class="border-r-[1px] border-b-[1px] border-r-gray-200 border-b-gray-200 py-[23px]"
+          class="border-r-[1px] border-b-[1px] border-r-gray-200 border-b-gray-200  h-[98px]"
         >
           <img class="w-[180px] h-[35px] m-9" src="logo.svg" />
         </div>
@@ -50,7 +51,7 @@
             >ALL BOARDS (3)</span
           >
           <div
-            class="flex items-center gap-[20px] rounded-r-full bg-[#635fc7] w-[270px] h-[50px] p-[20px] text-white font-medium"
+            class="flex items-center gap-[20px] rounded-r-full bg-[#635fc7] w-[270px] h-[50px] p-[20px] text-white font-medium hover:opacity-[0.5] hover:cursor-pointer"
           >
             <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -61,7 +62,7 @@
             <span>Platform Launch</span>
           </div>
           <div
-            class="flex items-center gap-[20px] rounded-r-full bg-white w-[270px] h-[50px] p-[20px] text-[#6b7280] font-medium"
+            class="flex items-center gap-[20px] rounded-r-full bg-white w-[270px] h-[50px] p-[20px] text-[#6b7280] font-medium hover:opacity-[0.5] hover:cursor-pointer hover:bg-[#635fc7] hover:text-white"
           >
             <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -72,7 +73,7 @@
             <span>Marketing Plan</span>
           </div>
           <div
-            class="flex items-center gap-[20px] rounded-r-full bg-white w-[270px] h-[50px] p-[20px] text-[#6b7280] font-medium"
+            class="flex items-center gap-[20px] rounded-r-full bg-white w-[270px] h-[50px] p-[20px] text-[#6b7280] font-medium hover:opacity-[0.5] hover:cursor-pointer hover:bg-[#635fc7] hover:text-white"
           >
             <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -83,7 +84,7 @@
             <span>Roadmap</span>
           </div>
           <div
-            class="flex items-center gap-[20px] rounded-r-full bg-white w-[270px] h-[50px] p-[20px] text-[#635fc7] font-bold"
+            class="flex items-center gap-[20px] rounded-r-full bg-white w-[270px] h-[50px] p-[20px] text-[#635fc7] font-bold hover:cursor-pointer"
           >
             <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -95,7 +96,7 @@
           </div>
 
           <div
-            class="bg-[#f4f7fd] flex gap-[30px] items-center w-[240px] h-[50px] mt-90 ml-[70px] justify-center"
+            class="bg-[#f4f7fd] flex gap-[30px] items-center w-[240px] h-[50px] mt-33 ml-[50px] justify-center rounded-1"
           >
             <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -118,23 +119,71 @@
         </div>
       </aside>
       <main
-        class="bg-blue-50 col-start-2 col-end-3 row-start-2 row-end-3 border-l-[1px] border-l-gray-200 flex justify-around py-[20px] "
+        class="bg-blue-50 col-start-2 col-end-3 row-start-2 row-end-3 border-l-[1px] border-l-gray-200 flex justify-around py-[20px] px-[30px] h-full"
       >
         <div class=" gap-3 w-[300px] flex flex-col  ">
          <div class="flex gap-3">
            <div class="bg-[#49c4e5] w-[20px] h-[20px] rounded-3xl"></div>
-          <span>TODO <span>(4)</span></span>
+          <span class="text-[13px] text-[#9ca3af] font-medium ">TODO <span>(4)</span></span>
          </div>
-          <div class=" flex flex-col  " >
-           <div class="bg-white shadow-md w-[300px] h-[60px]">
-            <span>Build UI for onboarding flow</span>
-            <span>0 of 1 subtasks</span>
+          <div class=" flex flex-col" >
+           <div class="bg-white shadow-md  w-[288px] h-[100px] p-5 rounded-[8px] ">
+            <span class="font-bold text-[15px]">Build UI for onboarding flow</span><br>
+            <span class="text-[12px] font-medium text-gray-400">0 of 1 subtasks</span>
+           </div>
+          </div>
+        </div>
+        <div class=" gap-3 w-[300px] flex flex-col  ">
+         <div class="flex gap-3">
+           <div class="bg-[#8471f2] w-[20px] h-[20px] rounded-3xl"></div>
+          <span class="text-[13px] text-[#9ca3af] font-medium ">
+DOING <span>(7)</span></span>
+         </div>
+          <div class=" flex flex-col" >
+           <div class="bg-white shadow-md  w-[288px] h-[100px] p-5 rounded-[8px] ">
+            <span class="font-bold text-[15px]">Design settings and search pages</span><br>
+            <span class="text-[12px] font-medium text-gray-400">0 of 1 subtasks</span>
+           </div>
+          </div>
+        </div>
+        <div class=" gap-3 w-[300px] flex flex-col  ">
+         <div class="flex gap-3">
+           <div class="bg-[#67e2ae] w-[20px] h-[20px] rounded-3xl"></div>
+          <span class="text-[13px] text-[#9ca3af] font-medium ">
+Done<span>(5)</span></span>
+         </div>
+          <div class=" flex flex-col" >
+           <div class="bg-white shadow-md  w-[288px] h-[100px] p-5 rounded-[8px] ">
+            <span class="font-bold text-[15px]">Conduct 5 wireframe tests</span><br>
+            <span class="text-[12px] font-medium text-gray-400">0 of 1 subtasks</span>
            </div>
           </div>
         </div>
       
       </main>
     </div>
+    </section>
+    <section class="hide flex justify-center items-center  h-screen ">
+      <div class="flex flex-col gap-[20px] bg-white  w-[550px] h-[520px] rounded-[12px]">
+        <h1 class="text-[15px] font-bold">Add New Task</h1>
+        <span class="text-[13px] text-gray-400 font-bold">Title</span>
+        <input type="text" class="border-1 border-gray-400 p-[9px] rounded-[5px]">
+        <span class="text-[13px] text-gray-400 font-bold ">Description</span>
+        <input type="text" class="border-1 border-gray-400 p-[30px] rounded-[5px]">
+      
+       
+         <label for="Status" class="text-[13px] text-gray-400 font-bold">Status</label>
+         <select id="status"  class="border-1 border-gray-400 p-[7px] rounded-[20px]" >
+            <option value=" ">   </option>
+          <option value="TODO">TODO</option>
+           <option value="DOING">DOING</option>
+            <option value="DONE">DONE</option>
+         </select>
+
+        <button class="bg-[#635fc7] text-white text-[18px] font-medium w-[550px] h-[40px] rounded-[20px]">Creat Task</button>
+
+      </div>
+    </section>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
