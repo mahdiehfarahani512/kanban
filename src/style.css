@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
-.hide{
+.hidden{
     display:none ;
 }

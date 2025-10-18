@@ -15,13 +15,13 @@
         <span class="font-bold text-black text-[25px]">Platform Launch</span>
         <div class="flex justify-between gap-4">
           <button
-            class="text-white font-bold bg-[#635fc7] text-[14px] py-3 px-5 rounded-[20px]"
+            class="text-white font-bold bg-[#635fc7] text-[14px] py-3 px-5 rounded-[20px] hover:cursor-pointer" id="addTask"
           >
             + Add New Task
           </button>
           <?xml version="1.0" encoding="utf-8"?>
           <!-- License: CC Attribution. Made by salesforce: https://lightningdesignsystem.com/ -->
-          <svg
+          <svg class="hover:cursor-pointer"
             fill="#000000"
             xmlns="http://www.w3.org/2000/svg"
             width="20px"
@@ -127,7 +127,7 @@
           <span class="text-[13px] text-[#9ca3af] font-medium ">TODO <span>(4)</span></span>
          </div>
           <div class=" flex flex-col" >
-           <div class="bg-white shadow-md  w-[288px] h-[100px] p-5 rounded-[8px] ">
+           <div class="bg-white shadow-md  w-[288px] h-[100px] p-5 rounded-[8px] hover:cursor-pointer hover:opacity-[0.2]">
             <span class="font-bold text-[15px]">Build UI for onboarding flow</span><br>
             <span class="text-[12px] font-medium text-gray-400">0 of 1 subtasks</span>
            </div>
@@ -135,12 +135,12 @@
         </div>
         <div class=" gap-3 w-[300px] flex flex-col  ">
          <div class="flex gap-3">
-           <div class="bg-[#8471f2] w-[20px] h-[20px] rounded-3xl"></div>
+           <div class="bg-[#8471f2] w-[20px] h-[20px] rounded-3xl "></div>
           <span class="text-[13px] text-[#9ca3af] font-medium ">
 DOING <span>(7)</span></span>
          </div>
           <div class=" flex flex-col" >
-           <div class="bg-white shadow-md  w-[288px] h-[100px] p-5 rounded-[8px] ">
+           <div class="bg-white shadow-md  w-[288px] h-[100px] p-5 rounded-[8px] hover:cursor-pointer hover:opacity-[0.2] ">
             <span class="font-bold text-[15px]">Design settings and search pages</span><br>
             <span class="text-[12px] font-medium text-gray-400">0 of 1 subtasks</span>
            </div>
@@ -153,7 +153,7 @@ DOING <span>(7)</span></span>
 Done<span>(5)</span></span>
          </div>
           <div class=" flex flex-col" >
-           <div class="bg-white shadow-md  w-[288px] h-[100px] p-5 rounded-[8px] ">
+           <div class="bg-white shadow-md  w-[288px] h-[100px] p-5 rounded-[8px] hover:cursor-pointer hover:opacity-[0.2]">
             <span class="font-bold text-[15px]">Conduct 5 wireframe tests</span><br>
             <span class="text-[12px] font-medium text-gray-400">0 of 1 subtasks</span>
            </div>
@@ -163,8 +163,8 @@ Done<span>(5)</span></span>
       </main>
     </div>
     </section>
-    <section class="hide flex justify-center items-center  h-screen ">
-      <div class="flex flex-col gap-[20px] bg-white  w-[550px] h-[520px] rounded-[12px]">
+    <section class="hidden flex justify-center items-center  h-screen ">
+      <div class="flex flex-col gap-[20px] bg-white  w-[550px] h-[520px] rounded-[12px]" id="creatTask">
         <h1 class="text-[15px] font-bold">Add New Task</h1>
         <span class="text-[13px] text-gray-400 font-bold">Title</span>
         <input type="text" class="border-1 border-gray-400 p-[9px] rounded-[5px]">
